@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Four Circles in a Row</title>
+  <style>
+    :root{
+      --circle-size: 80px;
+      --gap: 24px;
+      --color-1: #3498db;
+      --color-2: #e74c3c;
+      --color-3: #f1c40f;
+      --color-4: #2ecc71;
+    }
+
+    /* page layout */
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f7f9fb;
+    }
+
+    
+    .row {
+      display: flex;
+      gap: var(--gap);
+      align-items: center;
+      justify-content: center; 
+      padding: 20px;
+      
+      max-width: 720px;
+      width: 100%;
+    }
+
+   
+    .circle{
+      width: var(--circle-size);
+      height: var(--circle-size);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(20,30,40,0.08);
+      color: white;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    /* individual colors */
+    .c1 { background: var(--color-1); }
+    .c2 { background: var(--color-2); }
+    .c3 { background: var(--color-3); color: #222; }
+    .c4 { background: var(--color-4); color: #08310a; }
+
+    /* responsive: make circles smaller on narrow screens */
+    @media (max-width: 420px) {
+      :root { --circle-size: 56px; --gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="row" role="list" aria-label="Four colored circles">
+    <div class="circle c1" role="listitem">1</div>
+    <div class="circle c2" role="listitem">2</div>
+    <div class="circle c3" role="listitem">3</div>
+    <div class="circle c4" role="listitem">4</div>
+  </div>
+</body>
+</html>

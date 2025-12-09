@@ -165,6 +165,70 @@ nav a.active {
     background: #f0f7ff;
     text-align: center;
 }
+.help-form {
+    background: #f0f7ff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.help-form h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0070ba;
+}
+
+.help-form p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.help-form form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.help-form input,
+.help-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.help-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.help-form input:focus,
+.help-form textarea:focus {
+    border-color: #0070ba;
+    box-shadow: 0 0 8px rgba(0,112,186,0.3);
+}
+
+.help-form button {
+    width: fit-content;
+    margin: auto;
+    padding: 12px 25px;
+    background: #0070ba;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.help-form button:hover {
+    background: black;
+}
 
 .mission,
 .vision {
@@ -252,4 +316,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+   
+
+
 }
